@@ -14,7 +14,6 @@ public class PublicationService
 
     public async Task<Publication> LoadPublicationAsync()
     {
-        // Use a relative path based on the root of the project
         var filePath = Path.Combine(_environment.ContentRootPath, "Data", "Publications.json");
 
         if (!File.Exists(filePath))
