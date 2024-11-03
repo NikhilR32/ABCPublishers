@@ -1,0 +1,7 @@
+﻿@if (ViewBag.ErrorMessage != null)
+{
+    <p style="color: red;">@ViewBag.ErrorMessage</p>
+    <a asp-controller="Publication" asp-action="Section" asp-route-sectionId="preface" class="btn btn-primary">
+        Go Back to Sections
+    </a>
+}

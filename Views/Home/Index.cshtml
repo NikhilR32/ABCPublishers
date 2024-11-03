@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please click on the Section Navigation Link on the header.</p>
+    <p>Alternatively, Click on the button below.</p>
+
+    <a asp-controller="Publication" asp-action="Section" asp-route-sectionId="preface" class="btn btn-primary">
+        Sections
+    </a>
+</div>
