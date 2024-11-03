@@ -23,7 +23,7 @@ public class PublicationController : Controller
 
         if (!_publication.Sections.TryGetValue(sectionId, out var section))
         {
-            ViewBag.ErrorMessage = "The current Section has no chapters available. Please try again later.";
+            ViewBag.ErrorMessage = "The current section has no chapters available. Please try again later.";
             return View("/Views/Publications/Error.cshtml");
         }
 
